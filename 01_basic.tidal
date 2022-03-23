@@ -1,0 +1,25 @@
+d1 $sound "bd bd ~ bd" -- rest
+
+d1 $sound "[bd sn sn] cp" -- group
+d1 $sound "bd [sn sn]"
+d1 $sound "bd [sn sn sn]"
+d1 $sound "bd [sn sn sn sn]"
+d1 $sound "[bd bd] [sn sn sn]"
+
+d1 $sound "[bd bd] [bd [sn [sn sn] sn] sn]" -- group in group
+
+d1 $sound "[bd bd bd, sn cp sn cp]" -- poly
+d1 $sound "[bd bd bd, sn cp sn cp, arpy arpy, odx]"
+d1 $sound "[bd bd bd, [sn sn] cp, arpy [arpy [arpy arpy] arpy arpy], odx]"
+
+d1 $sound "bd*2" -- double
+d1 $sound "bd/2" -- half
+
+d1 $sound "[bd sn] cp/2" -- cycle (partial slow down)
+d1 $sound "[[bd sn] cp]/2" -- speed (slow down)
+
+-- ex. 8 beat
+d1 $sound "[bd ~ [bd ~ bd ~] ~, ~ sn ~ sn, [hh hh hh hh]*2]"
+
+d1 silence
+hush
