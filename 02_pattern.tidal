@@ -1,0 +1,14 @@
+d1 $rev (s "[bd bd] [bd [sn [sn sn] sn] sn]") -- reverse
+
+d1 $every 4 (rev) (s "[bd bd] [bd [sn [sn sn] sn] sn]")
+
+d1 $slow 4 $s "bd*2 [bd [sn n*2 sn] sn]" -- slow 1/4
+
+d1 $density 2 $s "bd*2 [bd [sn n*2 sn] sn]" -- speed up 2times
+
+-- below func 
+d1 $s "bd cp"
+-- is same as
+d1 (s "bd cp")
+
+hush
